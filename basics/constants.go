@@ -10,8 +10,8 @@ const s string = "constant"
 
 func main() {
 	fmt.Println("const s string = 'constant' = ", s)
-	`
-	const n = 500000000`
+	
+	const n = 500000000
 
 	const d = 3e20 / n
 	fmt.Println("const n = ", n)
