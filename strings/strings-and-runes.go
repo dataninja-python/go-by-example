@@ -5,6 +5,16 @@ import (
 	"unicode/utf8"
 )
 
+type Card struct {
+	uuid           string
+	unicode        string
+	fullName       string
+	suit           string
+	cardName       string
+	primaryValue   int
+	secondaryValue int
+}
+
 func examineRune(r rune) {
 	if r == 't' {
 		fmt.Println("found tee")
