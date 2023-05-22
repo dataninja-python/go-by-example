@@ -22,7 +22,7 @@ func main() {
 	}
 	fmt.Println()
 
-	fmt.Println("Rune count: ", utf8.RuneCountInStrings(s))
+	fmt.Println("Rune count: ", utf8.RuneCountInString(s))
 
 	for idx, runeValue := range s {
 		fmt.Printf("%#U starts at %d\n", runeValue, idx)
@@ -35,4 +35,9 @@ func main() {
 		w = width
 
 		examineRune(runeValue)
+	}
+	fmt.Println("\u2660")
+	fmt.Println("\u2665")
+	fmt.Println("\u2666")
+	fmt.Println("\u2663")
 }
